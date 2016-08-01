@@ -29,6 +29,7 @@ let g:colors_name = "railscasts"
 hi Normal                    guifg=#E6E1DC guibg=#232323
 hi Cursor                    guibg=#FFFFFF
 hi CursorLine                guibg=#333435
+hi CursorLineNr              guifg=#FD971F gui=none
 hi Search                    guibg=#5A647E
 hi Visual                    guibg=#5A647E
 hi LineNr                    guibg=#333435 guifg=#777777 gui=NONE
@@ -73,7 +74,7 @@ hi Constant                  guifg=#6D9CBE
 
 "rubyClass, rubyModule, rubyDefine
 "def, end, include, etc
-hi Define                    guifg=#CC7833
+hi Define                    guifg=#CC7833 gui=NONE ctermfg=130 cterm=NONE
 
 "rubyInterpolation
 hi Delimiter                 guifg=#519F50
@@ -90,27 +91,27 @@ hi Identifier                guifg=#D0D0FF gui=NONE
 
 "rubyInclude
 "include, autoload, extend, load, require
-hi Include                   guifg=#CC7833 gui=NONE
+hi Include                   guifg=#CC7833 gui=NONE ctermfg=130 cterm=NONE
 
 "rubyKeyword, rubyKeywordAsMethod
 "alias, undef, super, yield, callcc, caller, lambda, proc
-hi Keyword                   guifg=#CC7833
+hi Keyword                   guifg=#CC7833 gui=NONE ctermfg=130 cterm=NONE
 
 " same as define
-hi Macro                     guifg=#CC7833 gui=NONE
+hi Macro                     guifg=#CC7833 gui=NONE ctermfg=130 cterm=NONE
 
 "rubyInteger
 hi Number                    guifg=#A5C261
 
 " #if, #else, #endif
-hi PreCondit                 guifg=#CC7833 gui=NONE
+hi PreCondit                 guifg=#CC7833 gui=NONE ctermfg=130 cterm=NONE
 
 " generic preprocessor
-hi PreProc                   guifg=#CC7833 gui=NONE
+hi PreProc                   guifg=#CC7833 gui=NONE ctermfg=130 cterm=NONE
 
 "rubyControl, rubyAccess, rubyEval
 "case, begin, do, for, if unless, while, until else, etc.
-hi Statement                 guifg=#CC7833 gui=NONE
+hi Statement                 guifg=#CC7833 gui=NONE ctermfg=130  cterm=NONE
 
 "rubyString
 hi String                    guifg=#A5C261
@@ -118,7 +119,7 @@ hi String                    guifg=#A5C261
 hi Title                     guifg=#FFFFFF
 
 "rubyConstant
-hi Type                      guifg=#DA4939 gui=NONE
+hi Type                      guifg=#DA4939 gui=NONE ctermfg=167 cterm=NONE
 
 hi DiffAdd                   guifg=#E6E1DC guibg=#144212
 hi DiffDelete                guifg=#E6E1DC guibg=#660000
@@ -131,3 +132,6 @@ hi xmlTag                    guifg=#E8BF6A
 hi xmlTagName                guifg=#E8BF6A
 hi xmlEndTag                 guifg=#E8BF6A
 
+" Elixir
+" hi elixirAlias               guifg=#75879B gui=NONE ctermfg=103 cterm=NONE
+ 
